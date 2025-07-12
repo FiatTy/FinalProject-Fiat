@@ -26,6 +26,7 @@ object PollRepository {
     private val polls = mutableListOf<Poll>()
     private val pollOptions = mutableListOf<PollOption>()
 
+    //---------------------------------พูล
     fun getallPolls(): List<Poll> = polls
 
     fun getPollById(id: Int): Poll? = polls.find { it.id == id }
